@@ -46,3 +46,21 @@ for i in range(5):
     szamok.append(szam)
 
 print("A megadott számok átlaga:", sum(szamok)/5)
+
+lista = [4,9,11,5,2,13,58]
+
+max = lista[0]
+
+for i in range(len(lista)):
+    if lista[i] > max:
+        max = lista[i]
+
+print("A lista legnagyobb eleme:", max)
+
+min = lista[0]
+
+for i in range(len(lista)):
+    if lista[i] < min:
+        min = lista[i]
+
+print("A lista legkisebb eleme:", min)
