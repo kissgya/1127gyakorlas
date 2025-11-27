@@ -31,3 +31,12 @@ print("A legnagyobb szám:", legnagyobb)
 N = int(input("Adj meg egy számot: "))
 for i in range (1,N+1):
     print(i)
+
+
+szamok = []
+
+for i in range(5):
+    szam = float(input(f"{i+1}. Adj meg 5 számot: "))
+    szamok.append(szam)
+
+print("A megadott számok átlaga:", sum(szamok)/5)
