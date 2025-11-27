@@ -64,3 +64,13 @@ for i in range(len(lista)):
         min = lista[i]
 
 print("A lista legkisebb eleme:", min)
+
+
+lista = [4,9,11,5,2,13,58]
+
+szam = int(input("Adj meg egy számot: "))
+
+if szam in lista:
+    print("A keresett szám benne van a listában.")
+else:
+    print("A keresett szám nincs benne a listában.")
