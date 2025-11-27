@@ -13,10 +13,11 @@ else:
 
 
 szam1 = float(input("Adj meg egy számot: "))
-szam2 = float(input("Adj meg egy másik számot: "))
-if szam1 > szam2:
-    print("A nagyobb szám:", szam1)
-elif szam2 > szam1:
-    print("A nagyobb szám:", szam2)
+szam2 = float(input("Adj meg egy második számot: "))
+szam3 = float(input("Adj meg egy harmadik számot: "))
+if szam1 > szam2 and szam3:
+    print("A legnagyobb szám:", szam1)
+elif szam2 > szam1 and szam3:
+    print("A legnagyobb szám:", szam2)
 else:
-    print("A két megadott szám egyenlő.")
+    print("A legnagyobb szám:", szam3)
