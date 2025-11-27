@@ -6,18 +6,28 @@ print("A két megadott szám összege: ", osszeg)
 
 
 szam = int(input("Adj meg egy számot: "))
-if szam % 2 == 0:
-    print("A megadott szám páros")
+if szam == 0:
+    print("A megadott szám 0, ami se nem páros, se nem páratlan.")
+elif szam % 2 == 0:
+    print("A megadott szám páros.")
 else:
-    print("A megadott szám páratlan")
+    print("A megadott szám páratlan.")
 
 
 szam1 = float(input("Adj meg egy számot: "))
 szam2 = float(input("Adj meg egy második számot: "))
 szam3 = float(input("Adj meg egy harmadik számot: "))
-if szam1 > szam2 and szam3:
-    print("A legnagyobb szám:", szam1)
-elif szam2 > szam1 and szam3:
-    print("A legnagyobb szám:", szam2)
-else:
-    print("A legnagyobb szám:", szam3)
+
+legnagyobb = szam1
+
+if szam2 > legnagyobb:
+    legnagyobb = szam2
+
+if szam3 > legnagyobb:
+    legnagyobb = szam3
+
+print("A legnagyobb szám:", legnagyobb)
+
+N = int(input("Adj meg egy számot: "))
+for i in range (1,N+1):
+    print(i)
