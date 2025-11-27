@@ -33,6 +33,12 @@ for i in range (1,N+1):
     print(i)
 
 
+szam =int(input("Adj meg egy számot: "))
+for i in range(1, szam+1):
+    ossz = osszeg+i
+
+print("A számok összege 1 és a megadott szám között:", ossz)
+
 szamok = []
 
 for i in range(5):
