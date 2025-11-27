@@ -74,3 +74,15 @@ if szam in lista:
     print("A keresett szám benne van a listában.")
 else:
     print("A keresett szám nincs benne a listában.")
+
+
+
+lista = [4,9,11,5,2,13,58,16,21,87,98]
+
+paroslista = []
+
+for szam in lista:
+    if szam % 2 == 0:
+        paroslista.append(szam)
+
+print("Páros számok listája:", paroslista)
